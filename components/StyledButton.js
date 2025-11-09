@@ -1,7 +1,7 @@
 // components/StyledButton.js
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { COLORS, SIZES } from '../theme';
+import { COLORS, SIZES } from '../constants/theme';
 
 // Recibe un 'title' (texto) y un 'onPress' (función)
 const StyledButton = ({ title, onPress }) => {

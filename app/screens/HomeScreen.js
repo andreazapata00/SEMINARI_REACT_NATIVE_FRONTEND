@@ -7,11 +7,11 @@ import {
   Dimensions,
   Platform 
 } from 'react-native';
-import { useAuth } from '../AuthContext';    
-import apiClient from '../apiClient'; 
-import { COLORS, SIZES } from '../theme';
-import StyledInput from '../components/StyledInput';
-import StyledButton from '../components/StyledButton';
+import { useAuth } from '../../AuthContext';    
+import apiClient from '../../apiClient'; 
+import { COLORS, SIZES } from '../../constants/theme';
+import StyledInput from '../../components/StyledInput';
+import StyledButton from '../../components/StyledButton';
 
 // Hook para detectar el ancho de la pantalla
 const useScreenDimensions = () => {

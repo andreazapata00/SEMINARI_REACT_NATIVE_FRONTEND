@@ -4,10 +4,10 @@ import { ActivityIndicator, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { AuthProvider, useAuth } from './AuthContext'; 
+import { AuthProvider, useAuth } from '../AuthContext'; 
 import LoginScreen from './screens/LoginScreen';      
 import HomeScreen from './screens/HomeScreen';        
-import RegisterScreen from './screens/RegisterScreen'; // <-- 1. Importa la nueva pantalla
+import RegisterScreen from './screens/RegisterScreen'; 
 
 const Stack = createNativeStackNavigator();
 
@@ -36,7 +36,7 @@ function AppNavigator() {
               component={LoginScreen} 
               options={{ headerShown: false }} 
             />
-            {/* --- 👇 2. AÑADE LA PANTALLA AL NAVEGADOR --- */}
+            {/* --- 2. AÑADE LA PANTALLA AL NAVEGADOR --- */}
             <Stack.Screen 
               name="Register" 
               component={RegisterScreen}

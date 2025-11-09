@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 // Importa ScrollView
 import { View, StyleSheet, Text, Pressable, SafeAreaView, ScrollView } from 'react-native';
-import { useAuth } from '../AuthContext';
-import { COLORS, SIZES } from '../theme';
-import StyledInput from '../components/StyledInput'; 
-import StyledButton from '../components/StyledButton';
+import { useAuth } from '../../AuthContext';
+import { COLORS, SIZES } from '../../constants/theme';
+import StyledInput from '../../components/StyledInput'; 
+import StyledButton from '../../components/StyledButton';
 
 export default function LoginScreen({ navigation }) { 
   const [username, setUsername] = useState(''); 

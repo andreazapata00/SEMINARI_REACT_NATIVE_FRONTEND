@@ -1,7 +1,7 @@
 // components/StyledInput.js
 import React from 'react';
 import { TextInput, StyleSheet } from 'react-native';
-import { COLORS, SIZES } from '../theme';
+import { COLORS, SIZES } from '../constants/theme';
 
 const StyledInput = (props) => {
   return (
